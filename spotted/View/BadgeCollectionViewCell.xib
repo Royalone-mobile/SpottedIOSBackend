@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BadgeCollectionViewCell" id="gTV-IL-0wX" customClass="BadgeCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="129" height="233"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="129" height="233"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="59D-7P-hjJ">
+                        <rect key="frame" x="0.0" y="0.0" width="129" height="233"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YSo-22-yp4">
+                                <rect key="frame" x="0.0" y="0.0" width="129" height="163"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Axa-w3-2I8" customClass="BorderView">
+                                        <rect key="frame" x="12.5" y="55.5" width="103.5" height="102.5"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oRs-8u-9le" customClass="CircleBorderImageView">
+                                                <rect key="frame" x="0.0" y="0.5" width="103.5" height="102.5"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="oRs-8u-9le" firstAttribute="centerY" secondItem="Axa-w3-2I8" secondAttribute="centerY" id="C2E-cl-J0H"/>
+                                            <constraint firstItem="oRs-8u-9le" firstAttribute="height" secondItem="Axa-w3-2I8" secondAttribute="height" id="QX3-yF-rKT"/>
+                                            <constraint firstItem="oRs-8u-9le" firstAttribute="centerX" secondItem="Axa-w3-2I8" secondAttribute="centerX" id="nGV-2r-lQK"/>
+                                            <constraint firstAttribute="width" secondItem="Axa-w3-2I8" secondAttribute="height" multiplier="1:1" id="nN4-wR-EHW"/>
+                                            <constraint firstItem="oRs-8u-9le" firstAttribute="width" secondItem="Axa-w3-2I8" secondAttribute="width" id="tv8-EX-yVd"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Axa-w3-2I8" firstAttribute="centerX" secondItem="YSo-22-yp4" secondAttribute="centerX" id="4sS-yg-8wT"/>
+                                    <constraint firstAttribute="bottom" secondItem="Axa-w3-2I8" secondAttribute="bottom" constant="5" id="H5h-BO-7ob"/>
+                                    <constraint firstItem="Axa-w3-2I8" firstAttribute="width" secondItem="YSo-22-yp4" secondAttribute="width" multiplier="0.8" id="Ydc-pk-iRU"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gpq-BA-ebu">
+                                <rect key="frame" x="0.0" y="163" width="129" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rookie Spotter" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5uu-fJ-h6U">
+                                        <rect key="frame" x="6.5" y="4" width="116" height="14"/>
+                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                        <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="5uu-fJ-h6U" firstAttribute="centerX" secondItem="Gpq-BA-ebu" secondAttribute="centerX" id="UpB-hU-Cep"/>
+                                    <constraint firstItem="5uu-fJ-h6U" firstAttribute="width" secondItem="Gpq-BA-ebu" secondAttribute="width" multiplier="0.9" id="cvu-Jx-Xc5"/>
+                                    <constraint firstItem="5uu-fJ-h6U" firstAttribute="top" secondItem="Gpq-BA-ebu" secondAttribute="top" constant="4" id="dre-tf-eDx"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Gpq-BA-ebu" secondAttribute="bottom" id="Gw8-Ov-IGk"/>
+                            <constraint firstItem="YSo-22-yp4" firstAttribute="centerX" secondItem="59D-7P-hjJ" secondAttribute="centerX" id="LxR-5J-CLS"/>
+                            <constraint firstItem="Gpq-BA-ebu" firstAttribute="leading" secondItem="59D-7P-hjJ" secondAttribute="leading" id="NdW-Nw-DPl"/>
+                            <constraint firstAttribute="trailing" secondItem="Gpq-BA-ebu" secondAttribute="trailing" id="NlL-4Z-9LV"/>
+                            <constraint firstItem="YSo-22-yp4" firstAttribute="height" secondItem="59D-7P-hjJ" secondAttribute="height" multiplier="0.7" id="Trf-X4-SvB"/>
+                            <constraint firstItem="Gpq-BA-ebu" firstAttribute="top" secondItem="YSo-22-yp4" secondAttribute="bottom" id="bYE-kn-zK6"/>
+                            <constraint firstItem="YSo-22-yp4" firstAttribute="width" secondItem="59D-7P-hjJ" secondAttribute="width" id="dFm-8g-SZT"/>
+                            <constraint firstItem="YSo-22-yp4" firstAttribute="top" secondItem="59D-7P-hjJ" secondAttribute="top" id="jnz-uN-Lj2"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="59D-7P-hjJ" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="EqV-4D-Slg"/>
+                <constraint firstItem="59D-7P-hjJ" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Qih-Sz-MBe"/>
+                <constraint firstItem="59D-7P-hjJ" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="UFN-5c-7Up"/>
+                <constraint firstItem="59D-7P-hjJ" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="gR1-Ox-VQ8"/>
+            </constraints>
+            <size key="customSize" width="129" height="233"/>
+            <connections>
+                <outlet property="badgeImage" destination="oRs-8u-9le" id="4Oa-OH-l1z"/>
+                <outlet property="badgeView" destination="Axa-w3-2I8" id="KsC-Gz-kGu"/>
+                <outlet property="txtBadgeName" destination="5uu-fJ-h6U" id="Wtd-8t-gyj"/>
+            </connections>
+            <point key="canvasLocation" x="-10.5" y="60.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
